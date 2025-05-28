@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Darky ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background: url('pngtree-happy-birthday-greeting-card-background-image_16909227.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Dancing Script', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    .book-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .book {
+      width: 300px;
+      height: 400px;
+      position: relative;
+      perspective: 1500px;
+    }
+
+    .page {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: #fff;
+      border-radius: 5px 15px 15px 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      text-align: center;
+      transform-origin: left;
+      transition: transform 0.8s ease;
+      backface-visibility: hidden;
+      z-index: 1;
+    }
+
+    .page.flipped {
+      transform: rotateY(-180deg);
+      z-index: 0;
+    }
+
+    .cover, .back-cover {
+      background: linear-gradient(45deg, #ff758c, #ff7eb3);
+      color: white;
+      font-size: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    .back-cover {
+      justify-content: flex-end;
+      font-size: 16px;
+    }
+
+    .emoji {
+      font-size: 32px;
+      display: block;
+      margin-top: 10px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    button {
+      background: rgba(255, 255, 255, 0.7);
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      background: white;
+      transform: scale(1.1);
+    }
+
+    .page:not(.cover) {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="book-container">
+    <button class="prev-btn" aria-label="Previous page">←</button>
+    <div class="book">
+      <div class="page cover"><h1>Wish You<br>Happy Birthday Darky</h1></div>
+      <div class="page cover"><h1>21 incredible<br>Reasons why you are amazing</h1></div>
+      <div class="page"><h1>1. Honest<br>You speak truth with kindness, and that’s rare.</h1><span class="emoji">💫</span></div>
+      <div class="page"><h1>2. Empathetic<br>You don’t just hear people; you feel with them.</h1><span class="emoji">🧠</span></div>
+      <div class="page"><h1>3. Resilient<br>Life throws storms, but you never stay down for long.</h1><span class="emoji">💪</span></div>
+      <div class="page"><h1>4. Creative<br>You turn ordinary moments into something extraordinary.</h1><span class="emoji">🎨</span></div>
+      <div class="page"><h1>5. Disciplined<br>Your consistency inspires others to do better.</h1><span class="emoji">🔥</span></div>
+      <div class="page"><h1>6. Compassionate<br>You soften the world with your kindness.</h1><span class="emoji">🤗</span></div>
+      <div class="page"><h1>7. Confident<br>You don’t shrink—you stand tall and own your light.</h1><span class="emoji">💁‍♀️</span></div>
+      <div class="page"><h1>8. Humble<br>Even with greatness, you stay grounded.</h1><span class="emoji">😇</span></div>
+      <div class="page"><h1>9. Adaptable<br>Change doesn’t break you; it fuels you.</h1><span class="emoji">😈</span></div>
+      <div class="page"><h1>10. Patient<br>You trust the process, even when it’s hard.</h1><span class="emoji">💯</span></div>
+      <div class="page"><h1>11. Loyal<br>When you love, you love fiercely and faithfully.</h1><span class="emoji">🤝</span></div>
+      <div class="page"><h1>12. Optimistic<br>You see hope where others see walls.</h1><span class="emoji">🤞</span></div>
+      <div class="page"><h1>13. Responsible<br>People rely on you because you deliver.</h1><span class="emoji">🎯</span></div>
+      <div class="page"><h1>14. Courageous<br>Fear might visit you, but it never moves in.</h1><span class="emoji">🦸🏻‍♂️</span></div>
+      <div class="page"><h1>15. Generous<br>You give without keeping score.</h1><span class="emoji">🎁</span></div>
+      <div class="page"><h1>16. Persistent<br>“Quit” isn’t in your vocabulary.</h1><span class="emoji">💥</span></div>
+      <div class="page"><h1>17. Open-minded<br>You listen, learn, and grow endlessly.</h1><span class="emoji">📖</span></div>
+      <div class="page"><h1>18. Charismatic<br>You draw people in without even trying.</h1><span class="emoji">😎</span></div>
+      <div class="page"><h1>19. Detail-oriented<br>You notice what others miss, and it matters.</h1><span class="emoji">🧐</span></div>
+      <div class="page"><h1>20. Wise<br>Your advice is gold because it’s earned, not borrowed.</h1><span class="emoji">🎓</span></div>
+      <div class="page"><h1>21. Humorful<br>You bring joy, laughter, and lightness wherever you go.</h1><span class="emoji">😁</span></div>
+      <div class="page back-cover"><h1>Wishing you<br>an amazing Birthday My Darky ❤️</h1></div>
+    </div>
+    <button class="next-btn" aria-label="Next page">→</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const book = document.querySelector('.book');
+      const pages = document.querySelectorAll('.page');
+      const prevBtn = document.querySelector('.prev-btn');
+      const nextBtn = document.querySelector('.next-btn');
+      let currentPage = 0;
+
+      showPage(currentPage);
+
+      nextBtn.addEventListener('click', () => {
+        if (currentPage < pages.length - 1) {
+          currentPage++;
+          showPage(currentPage);
+        }
+      });
+
+      prevBtn.addEventListener('click', () => {
+        if (currentPage > 0) {
+          currentPage--;
+          showPage(currentPage);
+        }
+      });
+
+      function showPage(pageIndex) {
+        pages.forEach(page => {
+          page.style.display = 'none';
+          page.classList.remove('flipped');
+        });
+
+        pages[pageIndex].style.display = 'flex';
+
+        for (let i = 0; i < pageIndex; i++) {
+          pages[i].style.display = 'flex';
+          pages[i].classList.add('flipped');
+        }
+      }
+
+      let touchStartX = 0;
+      book.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+      });
+
+      book.addEventListener('touchend', (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        if (touchStartX - touchEndX > 50 && currentPage < pages.length - 1) {
+          currentPage++;
+          showPage(currentPage);
+        } else if (touchEndX - touchStartX > 50 && currentPage > 0) {
+          currentPage--;
+          showPage(currentPage);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
